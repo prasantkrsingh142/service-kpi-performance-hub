@@ -3,7 +3,7 @@
 A browser-based dashboard for tracking service KPIs by market, region and week.
 It is a **single HTML file**: no installation, no server, and no data leaves your computer.
 
-**Live link:** `https://prasantkrsingh142.github.io/service-kpi-performance-hub/`
+**Live link:** [Service KPI Performance Hub](https://prasantkrsingh142.github.io/service-kpi-performance-hub/Service_KPI_Performance_Hub.html)
 
 ---
 
