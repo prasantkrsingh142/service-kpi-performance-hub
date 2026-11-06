@@ -1,6 +1,8 @@
 # Service KPI Performance Hub
 
-**Live link:** [Service KPI Performance Hub](https://prasantkrsingh142.github.io/service-kpi-performance-hub/Service_KPI_Performance_Hub.html)
+**Live link (Philips internal):** [Service KPI Performance Hub](https://fantastic-adventure-4n38o1n.pages.github.io/Service_KPI_Performance_Hub.html)
+
+**Live link (public):** [Service KPI Performance Hub](https://prasantkrsingh142.github.io/service-kpi-performance-hub/Service_KPI_Performance_Hub.html)
 
 A browser-based service-KPI dashboard delivered as **one self-contained HTML file**.
 No installation, no server, no internet connection needed. Open it in Microsoft Edge or Chrome,
