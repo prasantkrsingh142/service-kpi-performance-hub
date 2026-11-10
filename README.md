@@ -21,9 +21,12 @@ Single-file HTML dashboard for Service KPIs (RR, RT, RDF, FVF, FTR PA, Service P
 
 ## Publish (GitHub Pages)
 
-Live link: https://prasantkrsingh142.github.io/service-kpi-performance-hub/Service_KPI_Performance_Hub.html
+Live links:
 
-Run `python build.py --publish`, then commit and push `Service_KPI_Performance_Hub.html` (repo root). GitHub Pages serves that file from `main`.
+- Philips internal: https://fantastic-adventure-4n38o1n.pages.github.io/Service_KPI_Performance_Hub.html (repo `philips-internal/service-kpi-performance-hub`)
+- Public: https://prasantkrsingh142.github.io/service-kpi-performance-hub/Service_KPI_Performance_Hub.html (repo `prasantkrsingh142/service-kpi-performance-hub`)
+
+Run `python build.py --publish`, then commit `Service_KPI_Performance_Hub.html` (repo root) and push `main` to both repos (`git push origin main` and `git push internal main`). GitHub Pages serves that file from `main`.
 
 ## Notes
 
