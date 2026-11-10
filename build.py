@@ -1,6 +1,7 @@
 """Build the dashboard with the settings from .env.
 
-Usage:  python build.py
+Usage:  python build.py            -> dist/ (local use)
+        python build.py --publish  -> also updates the root file served by GitHub Pages
 Reads .env (falls back to .env.example), injects the values into
 src/Service_KPI_Performance_Hub.html and writes dist/Service_KPI_Performance_Hub.html.
 Only the Python standard library is used.
@@ -13,6 +14,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT / "src" / "Service_KPI_Performance_Hub.html"
 DIST = ROOT / "dist" / "Service_KPI_Performance_Hub.html"
+PAGES = ROOT / "Service_KPI_Performance_Hub.html"
 BLOCK = re.compile(r"/\*@CONFIG-START\*/.*?/\*@CONFIG-END\*/", re.S)
 # The built-in last-year (2025) baseline in the dashboard is NAM-only.
 BASELINE_MARKETS = {"NAM"}
@@ -72,6 +74,9 @@ def main():
     DIST.parent.mkdir(exist_ok=True)
     DIST.write_text(html, encoding="utf-8", newline="")
     print(f"Built {DIST.relative_to(ROOT)}")
+    if "--publish" in sys.argv[1:]:
+        PAGES.write_text(html, encoding="utf-8", newline="")
+        print(f"Updated {PAGES.name} (GitHub Pages) - commit and push it to publish")
     print(f"  Market {cfg['market']} | labor rate {cfg['laborRate']} EUR/h | FY targets "
           f"RR {cfg['targets']['rr']:,.2f}, FVF w/o parts {cfg['targets']['fnp']:,.2f}, "
           f"FVF with parts {cfg['targets']['fwp']:,.2f}")

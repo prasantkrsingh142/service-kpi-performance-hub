@@ -19,6 +19,12 @@ Single-file HTML dashboard for Service KPIs (RR, RT, RDF, FVF, FTR PA, Service P
 
 `src/Service_KPI_Performance_Hub.html` also opens directly with the default settings.
 
+## Publish (GitHub Pages)
+
+Live link: https://prasantkrsingh142.github.io/service-kpi-performance-hub/Service_KPI_Performance_Hub.html
+
+Run `python build.py --publish`, then commit and push `Service_KPI_Performance_Hub.html` (repo root). GitHub Pages serves that file from `main`.
+
 ## Notes
 
 - `.env`, `dist/` and Excel files are not committed.
