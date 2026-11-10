@@ -1,8 +1,0 @@
-# Never commit business data
-*.xlsx
-*.xlsm
-*.xls
-*.csv
-
-# Build output
-dist/
